@@ -46,7 +46,6 @@ class Subject extends \UnsecureBundle\Entity\Subject implements \Doctrine\ORM\Pr
      */
     public function __construct($initializer = null, $cloner = null)
     {
-
         $this->__initializer__ = $initializer;
         $this->__cloner__      = $cloner;
     }
@@ -58,7 +57,7 @@ class Subject extends \UnsecureBundle\Entity\Subject implements \Doctrine\ORM\Pr
 
 
     /**
-     * 
+     *
      * @return array
      */
     public function __sleep()
@@ -71,11 +70,11 @@ class Subject extends \UnsecureBundle\Entity\Subject implements \Doctrine\ORM\Pr
     }
 
     /**
-     * 
+     *
      */
     public function __wakeup()
     {
-        if ( ! $this->__isInitialized__) {
+        if (! $this->__isInitialized__) {
             $this->__initializer__ = function (Subject $proxy) {
                 $proxy->__setInitializer(null);
                 $proxy->__setCloner(null);
@@ -83,17 +82,16 @@ class Subject extends \UnsecureBundle\Entity\Subject implements \Doctrine\ORM\Pr
                 $existingProperties = get_object_vars($proxy);
 
                 foreach ($proxy->__getLazyProperties() as $property => $defaultValue) {
-                    if ( ! array_key_exists($property, $existingProperties)) {
+                    if (! array_key_exists($property, $existingProperties)) {
                         $proxy->$property = $defaultValue;
                     }
                 }
             };
-
         }
     }
 
     /**
-     * 
+     *
      */
     public function __clone()
     {
@@ -193,7 +191,6 @@ class Subject extends \UnsecureBundle\Entity\Subject implements \Doctrine\ORM\Pr
      */
     public function setText($text)
     {
-
         $this->__initializer__ && $this->__initializer__->__invoke($this, 'setText', [$text]);
 
         return parent::setText($text);
@@ -204,7 +201,6 @@ class Subject extends \UnsecureBundle\Entity\Subject implements \Doctrine\ORM\Pr
      */
     public function getText()
     {
-
         $this->__initializer__ && $this->__initializer__->__invoke($this, 'getText', []);
 
         return parent::getText();
@@ -215,7 +211,6 @@ class Subject extends \UnsecureBundle\Entity\Subject implements \Doctrine\ORM\Pr
      */
     public function setCreationDate($creationDate)
     {
-
         $this->__initializer__ && $this->__initializer__->__invoke($this, 'setCreationDate', [$creationDate]);
 
         return parent::setCreationDate($creationDate);
@@ -226,7 +221,6 @@ class Subject extends \UnsecureBundle\Entity\Subject implements \Doctrine\ORM\Pr
      */
     public function getCreationDate()
     {
-
         $this->__initializer__ && $this->__initializer__->__invoke($this, 'getCreationDate', []);
 
         return parent::getCreationDate();
@@ -237,7 +231,6 @@ class Subject extends \UnsecureBundle\Entity\Subject implements \Doctrine\ORM\Pr
      */
     public function setUser(\UnsecureBundle\Entity\User $user)
     {
-
         $this->__initializer__ && $this->__initializer__->__invoke($this, 'setUser', [$user]);
 
         return parent::setUser($user);
@@ -248,7 +241,6 @@ class Subject extends \UnsecureBundle\Entity\Subject implements \Doctrine\ORM\Pr
      */
     public function getUser()
     {
-
         $this->__initializer__ && $this->__initializer__->__invoke($this, 'getUser', []);
 
         return parent::getUser();
@@ -259,7 +251,6 @@ class Subject extends \UnsecureBundle\Entity\Subject implements \Doctrine\ORM\Pr
      */
     public function setPrivate($private)
     {
-
         $this->__initializer__ && $this->__initializer__->__invoke($this, 'setPrivate', [$private]);
 
         return parent::setPrivate($private);
@@ -270,7 +261,6 @@ class Subject extends \UnsecureBundle\Entity\Subject implements \Doctrine\ORM\Pr
      */
     public function getPrivate()
     {
-
         $this->__initializer__ && $this->__initializer__->__invoke($this, 'getPrivate', []);
 
         return parent::getPrivate();
@@ -281,7 +271,6 @@ class Subject extends \UnsecureBundle\Entity\Subject implements \Doctrine\ORM\Pr
      */
     public function addComment(\UnsecureBundle\Entity\Comment $comments)
     {
-
         $this->__initializer__ && $this->__initializer__->__invoke($this, 'addComment', [$comments]);
 
         return parent::addComment($comments);
@@ -292,7 +281,6 @@ class Subject extends \UnsecureBundle\Entity\Subject implements \Doctrine\ORM\Pr
      */
     public function removeComment(\UnsecureBundle\Entity\Comment $comments)
     {
-
         $this->__initializer__ && $this->__initializer__->__invoke($this, 'removeComment', [$comments]);
 
         return parent::removeComment($comments);
@@ -303,10 +291,8 @@ class Subject extends \UnsecureBundle\Entity\Subject implements \Doctrine\ORM\Pr
      */
     public function getComments()
     {
-
         $this->__initializer__ && $this->__initializer__->__invoke($this, 'getComments', []);
 
         return parent::getComments();
     }
-
 }

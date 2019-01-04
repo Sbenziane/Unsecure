@@ -58,7 +58,7 @@ class __TwigTemplate_a3ba07bd7f9a4fb1785cb2ea489170b225c4b9996fae7f8cd0c19298c31
 
     public function getDebugInfo()
     {
-        return array (  35 => 9,  28 => 5,  24 => 4,  19 => 1,);
+        return array(  35 => 9,  28 => 5,  24 => 4,  19 => 1,);
     }
 }
 /* <!DOCTYPE html>*/

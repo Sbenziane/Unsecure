@@ -46,7 +46,6 @@ class Session extends \UnsecureBundle\Entity\Session implements \Doctrine\ORM\Pr
      */
     public function __construct($initializer = null, $cloner = null)
     {
-
         $this->__initializer__ = $initializer;
         $this->__cloner__      = $cloner;
     }
@@ -58,7 +57,7 @@ class Session extends \UnsecureBundle\Entity\Session implements \Doctrine\ORM\Pr
 
 
     /**
-     * 
+     *
      * @return array
      */
     public function __sleep()
@@ -71,11 +70,11 @@ class Session extends \UnsecureBundle\Entity\Session implements \Doctrine\ORM\Pr
     }
 
     /**
-     * 
+     *
      */
     public function __wakeup()
     {
-        if ( ! $this->__isInitialized__) {
+        if (! $this->__isInitialized__) {
             $this->__initializer__ = function (Session $proxy) {
                 $proxy->__setInitializer(null);
                 $proxy->__setCloner(null);
@@ -83,17 +82,16 @@ class Session extends \UnsecureBundle\Entity\Session implements \Doctrine\ORM\Pr
                 $existingProperties = get_object_vars($proxy);
 
                 foreach ($proxy->__getLazyProperties() as $property => $defaultValue) {
-                    if ( ! array_key_exists($property, $existingProperties)) {
+                    if (! array_key_exists($property, $existingProperties)) {
                         $proxy->$property = $defaultValue;
                     }
                 }
             };
-
         }
     }
 
     /**
-     * 
+     *
      */
     public function __clone()
     {
@@ -193,7 +191,6 @@ class Session extends \UnsecureBundle\Entity\Session implements \Doctrine\ORM\Pr
      */
     public function setData($data)
     {
-
         $this->__initializer__ && $this->__initializer__->__invoke($this, 'setData', [$data]);
 
         return parent::setData($data);
@@ -204,10 +201,8 @@ class Session extends \UnsecureBundle\Entity\Session implements \Doctrine\ORM\Pr
      */
     public function getData()
     {
-
         $this->__initializer__ && $this->__initializer__->__invoke($this, 'getData', []);
 
         return parent::getData();
     }
-
 }

@@ -41,7 +41,7 @@ class __TwigTemplate_9ceeb95ff1a8b3006483116450b29783749a39bfa6afcde57dafabe1569
 
     public function getDebugInfo()
     {
-        return array (  25 => 5,  19 => 1,);
+        return array(  25 => 5,  19 => 1,);
     }
 }
 /* <footer class="footer">*/

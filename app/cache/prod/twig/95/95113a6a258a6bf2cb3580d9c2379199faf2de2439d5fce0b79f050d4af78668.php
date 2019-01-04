@@ -73,7 +73,7 @@ class __TwigTemplate_c2900c07b47ecb5b64689af8645d6ac1cfbafdc1633d948e87ebd6bf2dd
 
 ";
         // line 26
-        if ( !(null === (isset($context["sessionUser"]) ? $context["sessionUser"] : null))) {
+        if (!(null === (isset($context["sessionUser"]) ? $context["sessionUser"] : null))) {
             // line 27
             echo "    ";
             echo             $this->env->getExtension('form')->renderer->renderBlock((isset($context["commentForm"]) ? $context["commentForm"] : null), 'form');
@@ -133,7 +133,7 @@ class __TwigTemplate_c2900c07b47ecb5b64689af8645d6ac1cfbafdc1633d948e87ebd6bf2dd
 
     public function getDebugInfo()
     {
-        return array (  119 => 42,  103 => 38,  97 => 35,  93 => 33,  89 => 32,  86 => 31,  78 => 27,  76 => 26,  65 => 20,  61 => 19,  54 => 15,  50 => 13,  47 => 12,  40 => 7,  37 => 6,  30 => 3,  11 => 1,);
+        return array(  119 => 42,  103 => 38,  97 => 35,  93 => 33,  89 => 32,  86 => 31,  78 => 27,  76 => 26,  65 => 20,  61 => 19,  54 => 15,  50 => 13,  47 => 12,  40 => 7,  37 => 6,  30 => 3,  11 => 1,);
     }
 }
 /* {% extends 'UnsecureBundle::layout.html.twig' %}*/

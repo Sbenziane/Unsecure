@@ -64,7 +64,7 @@ class __TwigTemplate_07c741d01254c19ef3a91118c8bf0426ece0aa96fc6ba98ededa99aae05
 
     public function getDebugInfo()
     {
-        return array (  50 => 13,  47 => 12,  40 => 7,  37 => 6,  30 => 3,  11 => 1,);
+        return array(  50 => 13,  47 => 12,  40 => 7,  37 => 6,  30 => 3,  11 => 1,);
     }
 }
 /* {% extends 'UnsecureBundle::layout.html.twig' %}*/

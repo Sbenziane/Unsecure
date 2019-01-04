@@ -2,7 +2,7 @@
 
 use Symfony\Component\Translation\MessageCatalogue;
 
-$catalogue = new MessageCatalogue('en', array (
+$catalogue = new MessageCatalogue('en', array(
 ));
 
 

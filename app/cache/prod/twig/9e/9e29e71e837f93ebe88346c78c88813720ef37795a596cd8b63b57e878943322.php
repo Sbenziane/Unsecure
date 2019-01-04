@@ -34,7 +34,7 @@ class __TwigTemplate_a2bdc37e187010583ece92f435a316c7502833d04aca34658efe0d2ad3b
         echo "\">связаться с нами</a>
 \t    ";
         // line 11
-        if ( !(null === (isset($context["sessionUser"]) ? $context["sessionUser"] : null))) {
+        if (!(null === (isset($context["sessionUser"]) ? $context["sessionUser"] : null))) {
             // line 12
             echo "            <a class=\"navbar-brand\" href=\"";
             echo $this->env->getExtension('routing')->getPath("unsecure_mynews");
@@ -85,7 +85,7 @@ class __TwigTemplate_a2bdc37e187010583ece92f435a316c7502833d04aca34658efe0d2ad3b
 
     public function getDebugInfo()
     {
-        return array (  70 => 23,  65 => 21,  58 => 20,  52 => 18,  50 => 17,  45 => 14,  39 => 12,  37 => 11,  33 => 10,  29 => 9,  19 => 1,);
+        return array(  70 => 23,  65 => 21,  58 => 20,  52 => 18,  50 => 17,  45 => 14,  39 => 12,  37 => 11,  33 => 10,  29 => 9,  19 => 1,);
     }
 }
 /* <div class="navbar navbar-inverse navbar-fixed-top">*/

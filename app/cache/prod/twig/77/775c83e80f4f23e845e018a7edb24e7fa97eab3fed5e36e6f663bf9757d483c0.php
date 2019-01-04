@@ -176,7 +176,7 @@ class __TwigTemplate_2af73d014fbe54651d1283d3e0e7807a69cbaeeb39f4a03efd98dd51cc9
         echo "\" ";
         $this->displayBlock("widget_attributes", $context, $blocks);
         echo " ";
-        if ( !twig_test_empty((isset($context["value"]) ? $context["value"] : null))) {
+        if (!twig_test_empty((isset($context["value"]) ? $context["value"] : null))) {
             echo "value=\"";
             echo twig_escape_filter($this->env, (isset($context["value"]) ? $context["value"] : null), "html", null, true);
             echo "\" ";
@@ -267,7 +267,7 @@ class __TwigTemplate_2af73d014fbe54651d1283d3e0e7807a69cbaeeb39f4a03efd98dd51cc9
     public function block_choice_widget_collapsed($context, array $blocks = array())
     {
         // line 55
-        if ((((((isset($context["required"]) ? $context["required"] : null) && (null === (isset($context["placeholder"]) ? $context["placeholder"] : null))) &&  !(isset($context["placeholder_in_choices"]) ? $context["placeholder_in_choices"] : null)) &&  !(isset($context["multiple"]) ? $context["multiple"] : null)) && ( !$this->getAttribute((isset($context["attr"]) ? $context["attr"] : null), "size", array(), "any", true, true) || ($this->getAttribute((isset($context["attr"]) ? $context["attr"] : null), "size", array()) <= 1)))) {
+        if ((((((isset($context["required"]) ? $context["required"] : null) && (null === (isset($context["placeholder"]) ? $context["placeholder"] : null))) &&  !(isset($context["placeholder_in_choices"]) ? $context["placeholder_in_choices"] : null)) &&  !(isset($context["multiple"]) ? $context["multiple"] : null)) && (!$this->getAttribute((isset($context["attr"]) ? $context["attr"] : null), "size", array(), "any", true, true) || ($this->getAttribute((isset($context["attr"]) ? $context["attr"] : null), "size", array()) <= 1)))) {
             // line 56
             $context["required"] = false;
         }
@@ -279,7 +279,7 @@ class __TwigTemplate_2af73d014fbe54651d1283d3e0e7807a69cbaeeb39f4a03efd98dd51cc9
         }
         echo ">";
         // line 59
-        if ( !(null === (isset($context["placeholder"]) ? $context["placeholder"] : null))) {
+        if (!(null === (isset($context["placeholder"]) ? $context["placeholder"] : null))) {
             // line 60
             echo "<option value=\"\"";
             if (((isset($context["required"]) ? $context["required"] : null) && twig_test_empty((isset($context["value"]) ? $context["value"] : null)))) {
@@ -579,7 +579,7 @@ $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttri
         // line 185
         if (twig_test_empty((isset($context["label"]) ? $context["label"] : null))) {
             // line 186
-            if ( !twig_test_empty((isset($context["label_format"]) ? $context["label_format"] : null))) {
+            if (!twig_test_empty((isset($context["label_format"]) ? $context["label_format"] : null))) {
                 // line 187
                 $context["label"] = twig_replace_filter((isset($context["label_format"]) ? $context["label_format"] : null), array("%name%" =>                 // line 188
 (isset($context["name"]) ? $context["name"] : null), "%id%" =>                 // line 189
@@ -621,9 +621,9 @@ $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttri
     public function block_form_label($context, array $blocks = array())
     {
         // line 211
-        if ( !((isset($context["label"]) ? $context["label"] : null) === false)) {
+        if (!((isset($context["label"]) ? $context["label"] : null) === false)) {
             // line 212
-            if ( !(isset($context["compound"]) ? $context["compound"] : null)) {
+            if (!(isset($context["compound"]) ? $context["compound"] : null)) {
                 // line 213
                 $context["label_attr"] = twig_array_merge((isset($context["label_attr"]) ? $context["label_attr"] : null), array("for" => (isset($context["id"]) ? $context["id"] : null)));
             }
@@ -635,7 +635,7 @@ $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttri
             // line 218
             if (twig_test_empty((isset($context["label"]) ? $context["label"] : null))) {
                 // line 219
-                if ( !twig_test_empty((isset($context["label_format"]) ? $context["label_format"] : null))) {
+                if (!twig_test_empty((isset($context["label_format"]) ? $context["label_format"] : null))) {
                     // line 220
                     $context["label"] = twig_replace_filter((isset($context["label_format"]) ? $context["label_format"] : null), array("%name%" =>                     // line 221
 (isset($context["name"]) ? $context["name"] : null), "%id%" =>                     // line 222
@@ -774,7 +774,7 @@ $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttri
     public function block_form_end($context, array $blocks = array())
     {
         // line 284
-        if (( !array_key_exists("render_rest", $context) || (isset($context["render_rest"]) ? $context["render_rest"] : null))) {
+        if ((!array_key_exists("render_rest", $context) || (isset($context["render_rest"]) ? $context["render_rest"] : null))) {
             // line 285
             echo $this->env->getExtension('form')->renderer->searchAndRenderBlock((isset($context["form"]) ? $context["form"] : null), 'rest');
         }
@@ -823,7 +823,7 @@ $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttri
         $context['_seq'] = twig_ensure_traversable((isset($context["form"]) ? $context["form"] : null));
         foreach ($context['_seq'] as $context["_key"] => $context["child"]) {
             // line 306
-            if ( !$this->getAttribute($context["child"], "rendered", array())) {
+            if (!$this->getAttribute($context["child"], "rendered", array())) {
                 // line 307
                 echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($context["child"], 'row');
             }
@@ -890,7 +890,7 @@ $context["attrvalue"] === true)) {
                     echo "=\"";
                     echo twig_escape_filter($this->env, $context["attrname"], "html", null, true);
                     echo "\"";
-                } elseif ( !(                // line 331
+                } elseif (!(                // line 331
 $context["attrvalue"] === false)) {
                     // line 332
                     echo twig_escape_filter($this->env, $context["attrname"], "html", null, true);
@@ -909,7 +909,7 @@ $context["attrvalue"] === false)) {
     public function block_widget_container_attributes($context, array $blocks = array())
     {
         // line 338
-        if ( !twig_test_empty((isset($context["id"]) ? $context["id"] : null))) {
+        if (!twig_test_empty((isset($context["id"]) ? $context["id"] : null))) {
             echo "id=\"";
             echo twig_escape_filter($this->env, (isset($context["id"]) ? $context["id"] : null), "html", null, true);
             echo "\"";
@@ -934,7 +934,7 @@ $context["attrvalue"] === true)) {
                 echo "=\"";
                 echo twig_escape_filter($this->env, $context["attrname"], "html", null, true);
                 echo "\"";
-            } elseif ( !(            // line 345
+            } elseif (!(            // line 345
 $context["attrvalue"] === false)) {
                 // line 346
                 echo twig_escape_filter($this->env, $context["attrname"], "html", null, true);
@@ -980,7 +980,7 @@ $context["attrvalue"] === true)) {
                 echo "=\"";
                 echo twig_escape_filter($this->env, $context["attrname"], "html", null, true);
                 echo "\"";
-            } elseif ( !(            // line 359
+            } elseif (!(            // line 359
 $context["attrvalue"] === false)) {
                 // line 360
                 echo twig_escape_filter($this->env, $context["attrname"], "html", null, true);
@@ -1017,7 +1017,7 @@ $context["attrvalue"] === true)) {
                 echo "=\"";
                 echo twig_escape_filter($this->env, $context["attrname"], "html", null, true);
                 echo "\"";
-            } elseif ( !(            // line 372
+            } elseif (!(            // line 372
 $context["attrvalue"] === false)) {
                 // line 373
                 echo twig_escape_filter($this->env, $context["attrname"], "html", null, true);
@@ -1038,7 +1038,7 @@ $context["attrvalue"] === false)) {
 
     public function getDebugInfo()
     {
-        return array (  1023 => 373,  1021 => 372,  1016 => 371,  1014 => 370,  1009 => 369,  1007 => 368,  1005 => 367,  1001 => 366,  998 => 365,  986 => 360,  984 => 359,  979 => 358,  977 => 357,  972 => 356,  970 => 355,  968 => 354,  964 => 353,  955 => 352,  952 => 351,  940 => 346,  938 => 345,  933 => 344,  931 => 343,  926 => 342,  924 => 341,  922 => 340,  918 => 339,  912 => 338,  909 => 337,  896 => 332,  894 => 331,  889 => 330,  887 => 329,  882 => 328,  880 => 327,  878 => 326,  873 => 325,  869 => 324,  865 => 323,  861 => 322,  855 => 321,  852 => 320,  844 => 316,  840 => 315,  837 => 314,  828 => 307,  826 => 306,  822 => 305,  819 => 304,  814 => 300,  806 => 298,  802 => 297,  800 => 296,  798 => 295,  795 => 294,  789 => 291,  786 => 290,  782 => 287,  779 => 285,  777 => 284,  774 => 283,  767 => 279,  765 => 278,  738 => 277,  735 => 275,  732 => 273,  730 => 272,  728 => 271,  725 => 270,  721 => 267,  719 => 266,  717 => 265,  714 => 264,  710 => 259,  707 => 258,  703 => 255,  701 => 254,  699 => 253,  696 => 252,  692 => 249,  690 => 248,  688 => 247,  686 => 246,  684 => 245,  681 => 244,  677 => 241,  674 => 236,  669 => 232,  649 => 228,  645 => 225,  642 => 222,  641 => 221,  640 => 220,  638 => 219,  636 => 218,  633 => 216,  631 => 215,  628 => 213,  626 => 212,  624 => 211,  621 => 210,  617 => 205,  615 => 204,  612 => 203,  608 => 200,  606 => 199,  603 => 198,  593 => 195,  589 => 192,  586 => 189,  585 => 188,  584 => 187,  582 => 186,  580 => 185,  577 => 184,  573 => 181,  571 => 180,  568 => 179,  564 => 176,  562 => 175,  559 => 174,  555 => 171,  553 => 170,  550 => 169,  546 => 166,  544 => 165,  541 => 164,  536 => 161,  534 => 160,  531 => 159,  527 => 156,  525 => 155,  522 => 154,  518 => 151,  516 => 150,  513 => 149,  509 => 146,  506 => 145,  502 => 142,  500 => 141,  497 => 140,  493 => 137,  491 => 136,  488 => 134,  483 => 130,  473 => 129,  468 => 128,  466 => 127,  463 => 125,  461 => 124,  458 => 123,  453 => 119,  451 => 117,  450 => 116,  449 => 115,  448 => 114,  444 => 113,  441 => 111,  439 => 110,  436 => 109,  431 => 105,  429 => 104,  427 => 103,  425 => 102,  423 => 101,  419 => 100,  416 => 98,  414 => 97,  411 => 96,  397 => 93,  394 => 92,  380 => 89,  377 => 88,  351 => 83,  349 => 82,  346 => 80,  344 => 79,  342 => 78,  337 => 77,  335 => 76,  318 => 75,  315 => 74,  311 => 71,  309 => 70,  307 => 69,  301 => 66,  299 => 65,  297 => 64,  295 => 63,  293 => 62,  284 => 60,  282 => 59,  275 => 58,  272 => 56,  270 => 55,  267 => 54,  263 => 51,  257 => 49,  255 => 48,  251 => 47,  247 => 46,  244 => 45,  239 => 41,  236 => 39,  234 => 38,  231 => 37,  223 => 34,  220 => 33,  216 => 30,  213 => 28,  211 => 27,  208 => 26,  204 => 23,  202 => 22,  200 => 21,  197 => 19,  195 => 18,  191 => 17,  188 => 16,  174 => 13,  172 => 12,  169 => 11,  164 => 7,  161 => 5,  159 => 4,  156 => 3,  152 => 365,  150 => 351,  148 => 337,  146 => 320,  144 => 314,  141 => 311,  139 => 304,  137 => 294,  135 => 290,  133 => 283,  131 => 270,  129 => 264,  127 => 258,  125 => 252,  123 => 244,  121 => 236,  119 => 232,  117 => 210,  115 => 203,  113 => 198,  111 => 184,  109 => 179,  107 => 174,  105 => 169,  103 => 164,  101 => 159,  99 => 154,  97 => 149,  95 => 145,  93 => 140,  91 => 134,  89 => 123,  87 => 109,  85 => 96,  83 => 92,  81 => 88,  79 => 74,  77 => 54,  75 => 45,  73 => 37,  71 => 33,  69 => 26,  67 => 16,  65 => 11,  63 => 3,);
+        return array(  1023 => 373,  1021 => 372,  1016 => 371,  1014 => 370,  1009 => 369,  1007 => 368,  1005 => 367,  1001 => 366,  998 => 365,  986 => 360,  984 => 359,  979 => 358,  977 => 357,  972 => 356,  970 => 355,  968 => 354,  964 => 353,  955 => 352,  952 => 351,  940 => 346,  938 => 345,  933 => 344,  931 => 343,  926 => 342,  924 => 341,  922 => 340,  918 => 339,  912 => 338,  909 => 337,  896 => 332,  894 => 331,  889 => 330,  887 => 329,  882 => 328,  880 => 327,  878 => 326,  873 => 325,  869 => 324,  865 => 323,  861 => 322,  855 => 321,  852 => 320,  844 => 316,  840 => 315,  837 => 314,  828 => 307,  826 => 306,  822 => 305,  819 => 304,  814 => 300,  806 => 298,  802 => 297,  800 => 296,  798 => 295,  795 => 294,  789 => 291,  786 => 290,  782 => 287,  779 => 285,  777 => 284,  774 => 283,  767 => 279,  765 => 278,  738 => 277,  735 => 275,  732 => 273,  730 => 272,  728 => 271,  725 => 270,  721 => 267,  719 => 266,  717 => 265,  714 => 264,  710 => 259,  707 => 258,  703 => 255,  701 => 254,  699 => 253,  696 => 252,  692 => 249,  690 => 248,  688 => 247,  686 => 246,  684 => 245,  681 => 244,  677 => 241,  674 => 236,  669 => 232,  649 => 228,  645 => 225,  642 => 222,  641 => 221,  640 => 220,  638 => 219,  636 => 218,  633 => 216,  631 => 215,  628 => 213,  626 => 212,  624 => 211,  621 => 210,  617 => 205,  615 => 204,  612 => 203,  608 => 200,  606 => 199,  603 => 198,  593 => 195,  589 => 192,  586 => 189,  585 => 188,  584 => 187,  582 => 186,  580 => 185,  577 => 184,  573 => 181,  571 => 180,  568 => 179,  564 => 176,  562 => 175,  559 => 174,  555 => 171,  553 => 170,  550 => 169,  546 => 166,  544 => 165,  541 => 164,  536 => 161,  534 => 160,  531 => 159,  527 => 156,  525 => 155,  522 => 154,  518 => 151,  516 => 150,  513 => 149,  509 => 146,  506 => 145,  502 => 142,  500 => 141,  497 => 140,  493 => 137,  491 => 136,  488 => 134,  483 => 130,  473 => 129,  468 => 128,  466 => 127,  463 => 125,  461 => 124,  458 => 123,  453 => 119,  451 => 117,  450 => 116,  449 => 115,  448 => 114,  444 => 113,  441 => 111,  439 => 110,  436 => 109,  431 => 105,  429 => 104,  427 => 103,  425 => 102,  423 => 101,  419 => 100,  416 => 98,  414 => 97,  411 => 96,  397 => 93,  394 => 92,  380 => 89,  377 => 88,  351 => 83,  349 => 82,  346 => 80,  344 => 79,  342 => 78,  337 => 77,  335 => 76,  318 => 75,  315 => 74,  311 => 71,  309 => 70,  307 => 69,  301 => 66,  299 => 65,  297 => 64,  295 => 63,  293 => 62,  284 => 60,  282 => 59,  275 => 58,  272 => 56,  270 => 55,  267 => 54,  263 => 51,  257 => 49,  255 => 48,  251 => 47,  247 => 46,  244 => 45,  239 => 41,  236 => 39,  234 => 38,  231 => 37,  223 => 34,  220 => 33,  216 => 30,  213 => 28,  211 => 27,  208 => 26,  204 => 23,  202 => 22,  200 => 21,  197 => 19,  195 => 18,  191 => 17,  188 => 16,  174 => 13,  172 => 12,  169 => 11,  164 => 7,  161 => 5,  159 => 4,  156 => 3,  152 => 365,  150 => 351,  148 => 337,  146 => 320,  144 => 314,  141 => 311,  139 => 304,  137 => 294,  135 => 290,  133 => 283,  131 => 270,  129 => 264,  127 => 258,  125 => 252,  123 => 244,  121 => 236,  119 => 232,  117 => 210,  115 => 203,  113 => 198,  111 => 184,  109 => 179,  107 => 174,  105 => 169,  103 => 164,  101 => 159,  99 => 154,  97 => 149,  95 => 145,  93 => 140,  91 => 134,  89 => 123,  87 => 109,  85 => 96,  83 => 92,  81 => 88,  79 => 74,  77 => 54,  75 => 45,  73 => 37,  71 => 33,  69 => 26,  67 => 16,  65 => 11,  63 => 3,);
     }
 }
 /* {# Widgets #}*/
